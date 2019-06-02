@@ -1,9 +1,10 @@
 module.exports = {
-  server: {
-    command: 'npm start',
-    port: 4444,
-    launchTimeout: 10000,
-    debug: true,
+  launch: {
+    dumpio: true,
     headless: process.env.HEADLESS !== 'false'
-  }
+  },
+  server: process.env.HEADLESS !== 'false' && {
+    command: 'npm start'
+  },
+  browserContext: 'default'
 };

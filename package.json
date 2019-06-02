@@ -16,8 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:integration": "jest -c integration/jest.config.js",
-    "test:integration:debug": "HEADLESS=false jest -c integration/jest.config.js",
-    "test:integration:watch": "jest -c integration/jest.config.js jest.config.js --watch",
+    "test:integration:watch": "HEADLESS=false jest -c integration/jest.config.js --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,7 +29,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "jest-puppeteer": "^4.1.1",
-    "puppeteer": "^1.16.0"
+    "jest-puppeteer": "3.9.0",
+    "puppeteer": "^1.17.0"
   }
 }
